@@ -367,17 +367,17 @@ body {
 #contact td {
   text-align: center;
 }
-#hours_contact {
+.hours_contact {
   width: 1200px;height: 104px;
   margin-bottom: 104px;margin-top: 80px;
   display: block;
 }
-#hours_contact div {
+.hours_contact div {
   width: 33.33%;float: left;
 
 }
 
-#hours_contact p {
+.hours_contact p {
   padding: 4px;font-size: 20px;
 
 }
@@ -458,17 +458,155 @@ body {
   height: auto;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,;
 }
-#h1_academic, #h1_contact, #h1_me {
+#h1_academic, #h1_contact, #h1_me, #h1_team {
   margin-top: 52px;
   margin-bottom: 104px; 
   text-align:center;
   position: relative;top:52px;
 }
-#h1_aboutus {
+#h1_teams {
+  text-align: center;
+  font-size: 45px;
+}
+
+#h1_aboutus{
   text-align: center;
 }
 #mainbar_index:target {
   display: block;
   position: relative;
   bottom: 250px;
+}
+
+#form_teacher {
+  display: none;
+}
+input#add_teacher:checked ~ #form_teacher {
+  display: block;
+}
+#form_team {
+  display: none;
+}
+input#add_team:checked ~ #form_team {
+  display: block;
+}
+
+#sports_team {
+  display: none;
+}
+
+input#sports:checked ~ #sports_team {
+  display: block;
+}
+#scientific_team {
+  display: none;
+}
+input#scientific:checked ~ #scientific_team {
+  display: block;
+}
+
+#table_teams2 {
+  margin-top: 152px;
+  border-spacing :0;
+}
+
+#table_teams2, #table_teams2 td, #table_teams2 th {
+  border: inset rgb(139, 139, 139) 4px;
+  font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
+ 
+
+}
+#table_teams2 td {
+  width:265px;
+  height: 40px;
+}
+#table_teams2 th {
+  background-color: rgb(100, 100, 100);
+  color: white;
+  
+}
+
+
+#table_team, #table_teacher {
+  border: outset rgb(150, 147, 147) 8px;
+  display:block;
+  margin-top: 52px;
+  float: right;
+  clear: both;
+  border-spacing :0;
+
+}
+#table_team {
+  margin-top: 52px;
+  position: relative;
+  top: 154px;
+}
+#table_team td, #table_teacher td {
+  width:265px;
+  height: 40px;
+  font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
+  border: outset  rgb(150, 147, 147) 2px;
+
+
+}
+#first_row, #first_row2 {
+  background-color: rgb(100, 100, 100);
+  color: white;
+  
+}
+#forms {
+  position: relative;
+  top: 152px;
+  margin-bottom: 100%;
+  display: block;
+}
+
+
+#legend {
+  font-size: 2em;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+
+}
+#fieldset {
+  border: groove rgb(187, 187, 187) 4px;
+}
+#form input[type = "radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+label {
+  display: block;
+  background-color: #ddd;
+  padding: 10px 10px;
+  font-family: sans-serif, Arial;
+  font-size: 16px;
+  border: 2px solid #444;
+  border-radius: 4px;
+		text-align: center;
+  margin-bottom: 8px;
+}
+#form input[type="radio"]:checked + label {
+  background-color:rgb(24, 102, 190);
+  border-color: rgb(23, 37, 158);
+}
+#form input[type="text"], #form select, button {
+  display: block;
+  text-align: center;
+  margin-bottom: 4px;
+
+}
+
+#form label:hover {
+  background-color: rgb(117, 117, 117);
+}
+.teacher_radio, .team_radio {
+  width: 80%;
+  background-color: rgb(141, 141, 141);
+  color: white;
+
+
 }
