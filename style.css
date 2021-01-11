@@ -629,3 +629,24 @@ label {
 
 
 }
+.team_radio2 {
+  width: 60%;
+  background-color: rgb(207, 209, 209);
+}
+#form input[type="text"] {
+
+  width: 200px;
+  height: 24px;
+}
+#form select{
+  width: 164px;
+  height: 24px;
+
+}
+button {
+
+  width: 120px;
+  height: 32px;
+  background-color: rgb(66, 66, 66);
+  color: white;
+}
