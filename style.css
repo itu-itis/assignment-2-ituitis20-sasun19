@@ -446,9 +446,16 @@ body {
   height: auto;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,;
 }
-#h1_academic, #h1_contact, #h1_me, #h1_team,#h1_aboutus {
-  margin-top: 52px;
+#h1_academic, #h1_contact, #h1_me, #h1_team {
+  margin-top: 75px;
   margin-bottom: 104px; 
+  text-align:center;
+  position: relative;top:58px;
+}
+
+#h1_aboutus{
+
+  margin-top: 75px;
   text-align:center;
   position: relative;top:58px;
 }
@@ -629,6 +636,9 @@ label {
 
 
 }
+
+
+
 .team_radio2 {
   width: 60%;
   background-color: rgb(207, 209, 209);
@@ -649,4 +659,13 @@ button {
   height: 32px;
   background-color: rgb(66, 66, 66);
   color: white;
+}
+
+div#index, div#aboutus, div#contact_page, div#academic, div#me, div#form_page {
+  display: none;
+
+}
+
+div#index:target, div#aboutus:target, div#contact_page:target, div#academic:target, div#me:target, div#form_page:target {
+  display: block;
 }
